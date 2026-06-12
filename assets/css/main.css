@@ -21,7 +21,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 0%;
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -103,8 +103,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #6e6e6e;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 16pt;
+		font-family: 'Montserrat';
+		font-size: 16px;
 		font-weight: 400;
 		line-height: 1.75em;
 	}
@@ -2705,25 +2705,12 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/header.jpg");
-		background-position: bottom center,					top left,				center center;
-		background-repeat: repeat-x,						repeat,					no-repeat;
-		background-size: 3200px 460px,					auto,					cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: 0px 0px;
 		color: rgba(255, 255, 255, 0.8);
-		padding: 10em 0 20em 0;
-		position: relative;
 		text-align: center;
 	}
-
-		#header:before, #header:after {
-			background: rgba(224, 224, 224, 0.75);
-			content: '';
-			left: 50%;
-			position: absolute;
-			width: 1px;
-			z-index: 0;
-		}
 
 		#header:before {
 			height: calc(100% - 50px);
@@ -2754,6 +2741,10 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
+		#header h1 {
+			font-family: Nunito;
+		}
+
 		#header input[type="submit"],
 		#header input[type="reset"],
 		#header input[type="button"],
@@ -2763,23 +2754,18 @@ input, select, textarea {
 		}
 
 		#header .logo {
-			background: #4eb980;
+			background-image: url("../../images/profile2.jpg");
+			background-position: center;
+			background-size: 100%;
 			border-radius: 100%;
-			color: #ffffff;
-			cursor: default;
 			display: inline-block;
-			font-size: 2.25em;
-			height: 2.35em;
-			line-height: 2.35em;
-			margin: 0 0 0.75em 0;
-			text-align: center;
-			width: 2.35em;
+			height: 4em;
+			min-height: 124px;
+			margin: 0 0 0.5em 0;
+			width: 4em;
+			min-width: 124px;
+			box-shadow: 0px 6px 18px 12px rgb(0 0 0 / 0.15);
 		}
-
-			#header .logo.fa-paper-plane-o:before {
-				left: -0.075em;
-				position: relative;
-			}
 
 		#header h1 {
 			font-size: 2.5em;
@@ -3174,8 +3160,9 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				background-image: url("images/top-1280.svg"), url("images/overlay.png"), url("../../images/header.jpg");
-				background-size: 1280px 184px,						auto,							cover;
+				background-image: url("images/top-1280.svg"), url("../../images/header.jpg");
+				background-size: 1280px 184px,							cover;
+				background-attachment: scroll,							fixed;
 				padding: 3em 0 7em 0;
 			}
 
